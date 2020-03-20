@@ -1,0 +1,266 @@
+.main-banner {
+  position: relative;
+
+  @include screen(xl) {
+    padding: 15px 0 0 0;
+    background: $gray-light;
+  }
+
+  @include screen(l) {
+    margin-top: 15px;
+  }
+
+  &__container {
+    overflow: hidden;
+
+    @include screen(xl) {
+      padding-bottom: 30px;
+    }
+
+    @include screen(l) {
+      box-shadow: 0px 2px 24px $black-opacity-05;
+      border-radius: 20px;
+    }
+  }
+
+  .swiper-slide {
+    position: relative;
+    overflow: hidden;
+
+    @include screen(xl) {
+      padding: 25px 15px 0;
+      width: 90% !important;
+      height: 430px;
+      box-shadow: 0px 2px 24px $black-opacity-05;
+      border-radius: 20px;
+    }
+
+    @include screen(l) {
+      padding-top: 130px;
+      height: 565px;
+    }
+
+    p {
+      position: relative;
+      z-index: 1;
+      color: $white;
+
+      @include screen(xl) {
+        text-align: center;
+      }
+
+      &:nth-of-type(1) {
+        @include screen(xl) {
+          margin-bottom: 15px;
+          font: 500 26px/34px FuturaPT;
+        }
+
+        @include screen(l) {
+          font: 500 42px/54px FuturaPT;
+        }
+      }
+
+      &:nth-of-type(2) {
+        @include screen(xl) {
+          font: 500 16px/24px FuturaPT;
+        }
+
+        @include screen(l) {
+          font: 300 30px/54px FuturaPT;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+
+      @include screen(xl) {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    &.slide-1 {
+      background-color: $black;
+
+      @include screen(xl) {
+        justify-content: space-between;
+      }
+
+      img {
+        @include screen(xl) {
+          max-width: 400px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 50px;
+          left: 20px;
+          margin: auto;
+          width: 650px;
+        }
+      }
+
+      div {
+        @include screen(l) {
+          padding-left: 120px;
+        }
+      }
+    }
+
+    &.slide-2 {
+      background-color: $black;
+
+      @include screen(xl) {
+        justify-content: space-between;
+      }
+
+      img {
+        @include screen(xl) {
+          max-width: 300px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          right: 150px;
+          width: 400px;
+        }
+      }
+
+      div {
+        &:first-of-type {
+          @include screen(l) {
+            padding-left: 100px;
+          }
+        }
+      }
+    }
+
+    &.slide-3 {
+      background-color: $white;
+
+      @include screen(xl) {
+        justify-content: space-between;
+      }
+
+      img {
+        @include screen(xl) {
+          max-width: 300px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          right: 50px;
+          margin: auto;
+          width: 600px;
+        }
+      }
+
+      div {
+        &:first-of-type {
+          @include screen(l) {
+            padding-left: 100px;
+          }
+        }
+      }
+
+      p {
+        color: $main-black-color;
+      }
+    }
+
+    &.slide-4 {
+      background-color: $white;
+
+      @include screen(xl) {
+        justify-content: space-between;
+      }
+
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 350px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          right: 0;
+          margin: auto;
+          width: 750px;
+        }
+      }
+
+      div {
+        @include screen(l) {
+          padding-left: 100px;
+        }
+      }
+
+      p {
+        color: $main-black-color;
+      }
+    }
+
+    .btn {
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+      padding: 10px 15px;
+      max-width: 150px;
+      color: $white;
+      font: 600 15px/22px FuturaPT;
+      background: $black;
+      border: 1px solid $white;
+      border-radius: 8px;
+      box-shadow: none;
+
+      @include screen(xl) {
+        margin: 20px auto 0;
+      }
+
+      &:hover {
+        background: $main-color;
+        box-shadow: 0px 3px 10px $main-color-opacity-4;
+        border-color: $main-color;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
+    width: 14px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity .3s;
+
+    &.swiper-button-disabled {
+      opacity: .3;
+      pointer-events: none;
+    }
+
+    &--next {
+      right: -10px;
+      background: url("../img/pic/ico/arrow.svg") no-repeat;
+    }
+
+    &--prev {
+      left: -10px;
+      transform: rotate(180deg);
+      background: url("../img/pic/ico/arrow.svg") no-repeat;
+    }
+  }
+}

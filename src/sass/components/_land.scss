@@ -1,0 +1,73 @@
+.land {
+  background-color: $white;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    @include screen(xl) {
+      margin-bottom: 30px;
+    }
+
+    @include screen(l) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &:not(:last-of-type) {
+      @include screen(xl) {
+        padding-bottom: 20px;
+      }
+
+      @include screen(l) {
+        padding-bottom: 40px;
+      }
+    }
+
+    div {
+      @include screen(xl) {
+        padding: 0 10px;
+      }
+
+      @include screen(l) {
+        padding: 0 260px;
+      }
+    }
+
+    p {
+      &:first-of-type {
+        @include screen(xl) {
+          margin-bottom: 20px;
+          font: 500 26px/36px FuturaPT;
+        }
+
+        @include screen(l) {
+          margin-bottom: 40px;
+          font: 500 48px/48px FuturaPT;
+        }
+      }
+
+      &:last-of-type {
+        @include screen(xl) {
+          font: normal 18px/30px FuturaPT;
+        }
+
+        @include screen(l) {
+          font: normal 24px/32px FuturaPT;
+        }
+      }
+
+      br {
+        @include screen(xl) {
+          display: none;
+        }
+      }
+    }
+  }
+}
