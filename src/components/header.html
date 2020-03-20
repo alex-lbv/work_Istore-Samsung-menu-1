@@ -42,1534 +42,748 @@
                   <button type="button">Регистрация</button>
                 </div>
 
-                <ul class="menu__tabs uk-flex uk-child-width-1-2" uk-switcher="swiping: false">
+                <ul class="menu__tabs uk-flex uk-child-width-1-2" data-uk-switcher="swiping: false">
                   <li><a href="#">Категории товаров</a></li>
                   <li><a href="#">Меню</a></li>
                 </ul>
 
                 <ul class="uk-switcher uk-overflow-container">
                   <li>
-                    <ul class="menu__categories">
-                      <li class="menu__categories-list menu__categories-list-1">
-                        <div class="menu__categories-item"
-                          data-uk-toggle="target: .menu__categories-list-1; cls: active">
-                          <div class="menu__categories-item-container"
-                            data-uk-toggle="target: .menu__categories; cls: sublist-opened">
-                            <div class="menu__categories-image">
-                              <img src="img/pic/ico/iphone-ico.svg" width="29" height="59" alt="">
-                            </div>
-                            <span>Смартфоны</span>
-                          </div>
-                        </div>
-
-                        <div class="menu__categories-sublist">
-                          <div class="menu__categories-title">
-                            <span>Смартфоны</span>
-                            <button class="menu__categories-back" type="button"
-                              data-uk-toggle="target: .menu__categories-list-1; cls: active">
-                              <span data-uk-toggle="target: .menu__categories; cls: sublist-opened">Назад</span>
-                            </button>
-                          </div>
-
-                          <ul class="menu__categories-accordion" uk-accordion="multiple: true">
-                            <li>
-                              <a class="uk-accordion-title" href="#">Apple</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                    <ul class="menu__categories" data-uk-accordion>
+                      <li>
+                        <a class="uk-accordion-title" href="#">iPhone</a>
+                        <!-- Swiper -->
+                        <div class="uk-accordion-content swiper-products">
+                          <ul class="menu__categories-list uk-flex uk-flex-between swiper-wrapper">
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro Max</span>
+                              </a>
+                            </li>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Xiaomi</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-2.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Samsung</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS Max</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Huawei</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Fly</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-4.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XR</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-5.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone X</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-9.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone SE</span>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
 
-                      <li class="menu__categories-list menu__categories-list-2">
-                        <div class="menu__categories-item"
-                          data-uk-toggle="target: .menu__categories-list-2; cls: active">
-                          <div class="menu__categories-item-container"
-                            data-uk-toggle="target: .menu__categories; cls: sublist-opened">
-                            <div class="menu__categories-image">
-                              <img src="img/pic/ico/ipad-ico.svg" width="60" height="40" alt="">
-                            </div>
-                            <span>Планшеты</span>
-                          </div>
-                        </div>
-
-                        <div class="menu__categories-sublist">
-                          <div class="menu__categories-title">
-                            <span>Планшеты</span>
-                            <button class="menu__categories-back" type="button"
-                              data-uk-toggle="target: .menu__categories-list-2; cls: active">
-                              <span data-uk-toggle="target: .menu__categories; cls: sublist-opened">Назад</span>
-                            </button>
-                          </div>
-
-                          <ul class="menu__categories-accordion" uk-accordion>
-                            <li>
-                              <a class="uk-accordion-title" href="#">Apple</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                      <li>
+                        <a class="uk-accordion-title" href="#">iPad</a>
+                        <!-- Swiper -->
+                        <div class="uk-accordion-content swiper-products">
+                          <ul class="menu__categories-list uk-flex uk-flex-between swiper-wrapper">
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro Max</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Xiaomi</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Samsung</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-2.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Huawei</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS Max</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Fly</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-4.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XR</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-5.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone X</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-9.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone SE</span>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
 
-                      <li class="menu__categories-list menu__categories-list-3">
-                        <div class="menu__categories-item"
-                          data-uk-toggle="target: .menu__categories-list-3; cls: active">
-                          <div class="menu__categories-item-container"
-                            data-uk-toggle="target: .menu__categories; cls: sublist-opened">
-                            <div class="menu__categories-image">
-                              <img src="img/pic/ico/macbook-ico.svg" width="60" height="40" alt="">
-                            </div>
-                            <span>Телевизоры</span>
-                          </div>
-                        </div>
-
-                        <div class="menu__categories-sublist">
-                          <div class="menu__categories-title">
-                            <span>Телевизоры</span>
-                            <button class="menu__categories-back" type="button"
-                              data-uk-toggle="target: .menu__categories-list-3; cls: active">
-                              <span data-uk-toggle="target: .menu__categories; cls: sublist-opened">Назад</span>
-                            </button>
-                          </div>
-
-                          <ul class="menu__categories-accordion" uk-accordion>
-                            <li>
-                              <a class="uk-accordion-title" href="#">Apple</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                      <li>
+                        <a class="uk-accordion-title" href="#">MacBook и iMac</a>
+                        <!-- Swiper -->
+                        <div class="uk-accordion-content swiper-products">
+                          <ul class="menu__categories-list uk-flex uk-flex-between swiper-wrapper">
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro Max</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Xiaomi</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Samsung</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-2.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Huawei</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS Max</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Fly</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-4.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XR</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-5.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone X</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-9.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone SE</span>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
 
-                      <li class="menu__categories-list menu__categories-list-4">
-                        <div class="menu__categories-item"
-                          data-uk-toggle="target: .menu__categories-list-4; cls: active">
-                          <div class="menu__categories-item-container"
-                            data-uk-toggle="target: .menu__categories; cls: sublist-opened">
-                            <div class="menu__categories-image">
-                              <img src="img/pic/ico/iwatch-ico.svg" width="32" height="49" alt="">
-                            </div>
-                            <span>Часы</span>
-                          </div>
-                        </div>
-
-                        <div class="menu__categories-sublist">
-                          <div class="menu__categories-title">
-                            <span>Часы</span>
-                            <button class="menu__categories-back" type="button"
-                              data-uk-toggle="target: .menu__categories-list-4; cls: active">
-                              <span data-uk-toggle="target: .menu__categories; cls: sublist-opened">Назад</span>
-                            </button>
-                          </div>
-
-                          <ul class="menu__categories-accordion" uk-accordion>
-                            <li>
-                              <a class="uk-accordion-title" href="#">Apple</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                      <li>
+                        <a class="uk-accordion-title" href="#">Watch</a>
+                        <!-- Swiper -->
+                        <div class="uk-accordion-content swiper-products">
+                          <ul class="menu__categories-list uk-flex uk-flex-between swiper-wrapper">
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro Max</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Xiaomi</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Samsung</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-2.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Huawei</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS Max</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Fly</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-4.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XR</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-5.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone X</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-9.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone SE</span>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
 
-                      <li class="menu__categories-list menu__categories-list-6">
-                        <div class="menu__categories-item"
-                          data-uk-toggle="target: .menu__categories-list-6; cls: active">
-                          <div class="menu__categories-item-container"
-                            data-uk-toggle="target: .menu__categories; cls: sublist-opened">
-                            <div class="menu__categories-image">
-                              <img src="img/pic/ico/accessories-ico.svg" width="30" height="59" alt="">
-                            </div>
-                            <span>Аксессуары</span>
-                          </div>
-                        </div>
-
-                        <div class="menu__categories-sublist">
-                          <div class="menu__categories-title">
-                            <span>Аксессуары</span>
-                            <button class="menu__categories-back" type="button"
-                              data-uk-toggle="target: .menu__categories-list-6; cls: active">
-                              <span data-uk-toggle="target: .menu__categories; cls: sublist-opened">Назад</span>
-                            </button>
-                          </div>
-
-                          <ul class="menu__categories-accordion" uk-accordion>
-                            <li>
-                              <a class="uk-accordion-title" href="#">Apple</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                      <li>
+                        <a class="uk-accordion-title" href="#">Аксессуары</a>
+                        <!-- Swiper -->
+                        <div class="uk-accordion-content swiper-products">
+                          <ul class="menu__categories-list uk-flex uk-flex-between swiper-wrapper">
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro Max</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Xiaomi</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11 Pro</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Samsung</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-2.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 11</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Huawei</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS Max</span>
+                              </a>
                             </li>
 
-                            <li>
-                              <a class="uk-accordion-title" href="#">Fly</a>
-                              <div class="uk-accordion-content">
-                                <ul>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11 Pro</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 11</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS Max</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XS</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone XR</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone X</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 8</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7 Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 7</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s Plus</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6s</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone SE</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 6</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">iPhone 5s</a>
-                                  </li>
-                                </ul>
-                              </div>
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XS</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-4.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone XR</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-5.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone X</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 8</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7 Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 7</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S Plus</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone 6S</span>
+                              </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                              <a class="uk-flex uk-flex-column" href="#">
+                                <div>
+                                  <img src="img/pic/bg/header-catalog-9.jpg" alt="">
+                                </div>
+                                <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                                <span>iPhone SE</span>
+                              </a>
                             </li>
                           </ul>
                         </div>
@@ -1672,494 +886,180 @@
     <div class="header__sticky uk-flex uk-flex-middle bg-full-width--white" uk-sticky="media: (min-width: 1250px)">
       <div class="header__catalog uk-visible@l">
         <button class="header__catalog-btn" type="button">
-          <span class="header__catalog-btn-text">Каталог товаров</span>
+          <svg width="24" height="6" fill="rgba(255,255,255,.5)">
+            <use xlink:href="img/symbol/sprite.svg#points-ico" />
+          </svg>
+          Каталог товаров
         </button>
 
-        <div class="header__catalog-wrapper" data-uk-dropdown="mode: click; offset: 10">
-          <div class=" header__catalog-container">
-            <ul class="header__catalog-menu">
-              <li class="header__catalog-list active">
-                <a href="#">Смартфоны</a>
+        <div class="header__catalog-container" data-uk-dropdown="mode: click; delay-hide: 0">
+          <button class="header__catalog-close" id="header-catalog-close" type="button"
+            onclick="UIkit.dropdown('.header__catalog-container').hide();">Закрыть</button>
+          <span class="btn header__catalog-question" data-uk-toggle="target: #popupQuestion">Задать вопрос онлайн</span>
+          <ul class="header__catalog-tabs uk-subnav uk-subnav-pill" data-uk-switcher>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">MacBook и iMac</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Аксессуары</a></li>
+          </ul>
+          <ul class="header__catalog-content uk-switcher uk-text-left">
+            <li>
+              <ul class="header__catalog-list uk-flex uk-child-width-auto uk-grid-small" data-uk-grid>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 11 Pro Max</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-1.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 11 Pro</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-2.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 11</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone XS Max</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-3.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone XS</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-4.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone XR</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-5.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone X</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 8 Plus</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-6.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 8</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 7 Plus</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-7.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 7</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 6S Plus</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-8.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 6S</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-9.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone SE</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-9.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 6</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="uk-flex uk-flex-column" href="#">
+                    <div>
+                      <img src="img/pic/bg/header-catalog-9.jpg" alt="">
+                    </div>
+                    <span>от&nbsp;50&nbsp;000&nbsp;&#8381;</span>
+                    <span>iPhone 5S</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 class="uk-text-center uk-margin-bottom">Обмен и возврат в
+                течении 14 дней <br>с момента покупки.</h2>
+            </li>
+          </ul>
 
-                <div class="header__catalog-content">
-                  <ul class="header__catalog-content-top">
-                    <li>
-                      <a href="#">Новинки</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Акции</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Распродажа</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Смартфоны 2020</a>
-                    </li>
-                  </ul>
-
-                  <div class="header__catalog-sublist">
-                    <a href="#" class="header__catalog-sublist-title">
-                      <img src="img/pic/ico/catalog-ico-1.jpg" width="34" height="34" alt="">
-                      <span>Apple</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">iPhone 11 Pro Max</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11 Pro</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone XS Max</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone XS</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone XR</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone X</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 8 Plus</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 8</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 7 Plus</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 7</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 6s Plus</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 6s</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone SE</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 6</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 5s</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="header__catalog-sublist">
-                    <a href="#" class="header__catalog-sublist-title">
-                      <img src="img/pic/ico/catalog-ico-2.jpg" width="34" height="34" alt="">
-                      <span>Xiaomi</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">Redmi 2</a>
-                      </li>
-                      <li>
-                        <a href="#">Mi Max 2</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 3S</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 4А</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 4 PRO</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 6 PRO</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 4x</a>
-                      </li>
-                      <li>
-                        <a href="#">NOTE 2</a>
-                      </li>
-                      <li>
-                        <a href="#">NOTE 3</a>
-                      </li>
-                      <li>
-                        <a href="#">NOTE 4</a>
-                      </li>
-                      <li>
-                        <a href="#">NOTE 4Х</a>
-                      </li>
-                      <li>
-                        <a href="#">NOTE 5</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 5+</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 5A</a>
-                      </li>
-                      <li>
-                        <a href="#">Mi 9 Lite</a>
-                      </li>
-                      <li>
-                        <a href="#">Mi 9SE</a>
-                      </li>
-                      <li>
-                        <a href="#">Mi 9T</a>
-                      </li>
-                      <li>
-                        <a href="#">Mi 9T PRO</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 8</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 7А</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi 8A</a>
-                      </li>
-                      <li>
-                        <a href="#">Note 8</a>
-                      </li>
-                      <li>
-                        <a href="#">Note 8 PRO</a>
-                      </li>
-                      <li>
-                        <a href="#">Note 8T</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi Mi A3</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi Go</a>
-                      </li>
-                      <li>
-                        <a href="#">Redmi A2 Lite</a>
-                      </li>
-                      <li>
-                        <a href="#">Note 5A</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="header__catalog-sublist">
-                    <a href="#" class="header__catalog-sublist-title">
-                      <img src="img/pic/ico/catalog-ico-3.jpg" width="65" height="22" alt="">
-                      <span>Samsung</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">Samsung Note 8</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung Note 9</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S9</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S9 Plus</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S8</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S8 Dous</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S8 Plus</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S8 Plus Dous</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S7</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S7 Edge</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S6</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S5</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S5</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S4</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung J2 Core</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung A01 (2020)</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung A10 (2019)</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung A20s (2019)</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung A30s (2019)</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung A40 (2019)</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung A50 (2019)</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung A51 (2020)</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung Note 10</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung Note 10 Lite</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S10e</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S10</a>
-                      </li>
-                      <li>
-                        <a href="#">Samsung S10 Plus</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="header__catalog-list">
-                <a href="#">Гаджеты и электроника</a>
-
-                <div class="header__catalog-content">
-                  <ul class="header__catalog-content-top">
-                    <li>
-                      <a href="#">Новинки</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Акции</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Распродажа</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Смартфоны 2020</a>
-                    </li>
-                  </ul>
-
-                  <div class="header__catalog-sublist">
-                    <a href="#" class="header__catalog-sublist-title">
-                      <img src="img/pic/ico/catalog-ico-1.jpg" width="34" height="34" alt="">
-                      <span>Apple</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">iPhone 11 Pro Max</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11 Pro</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="header__catalog-list">
-                <a href="#">Аксессуары</a>
-
-                <div class="header__catalog-content">
-                  <ul class="header__catalog-content-top">
-                    <li>
-                      <a href="#">Новинки</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Акции</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Распродажа</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Смартфоны 2020</a>
-                    </li>
-                  </ul>
-
-                  <div class="header__catalog-sublist">
-                    <a href="#" class="header__catalog-sublist-title">
-                      <img src="img/pic/ico/catalog-ico-2.jpg" width="34" height="34" alt="">
-                      <span>Apple</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">iPhone 11 Pro Max</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11 Pro</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="header__catalog-list">
-                <a href="#">Mac</a>
-
-                <div class="header__catalog-content">
-                  <ul class="header__catalog-content-top">
-                    <li>
-                      <a href="#">Новинки</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Акции</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Распродажа</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Смартфоны 2020</a>
-                    </li>
-                  </ul>
-
-                  <div class="header__catalog-sublist">
-                    <a href="#" class="header__catalog-sublist-title">
-                      <img src="img/pic/ico/catalog-ico-3.jpg" width="65" height="22" alt="">
-                      <span>Apple</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">iPhone 11 Pro Max</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11 Pro</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="header__catalog-list">
-                <a href="#">Планшеты</a>
-
-                <div class="header__catalog-content">
-                  <ul class="header__catalog-content-top">
-                    <li>
-                      <a href="#">Новинки</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Акции</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Распродажа</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Смартфоны 2020</a>
-                    </li>
-                  </ul>
-
-                  <div class="header__catalog-sublist">
-                    <a href="#" class="header__catalog-sublist-title">
-                      <img src="img/pic/ico/catalog-ico-1.jpg" width="34px" height="34px" alt="">
-                      <span>Apple</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">iPhone 11 Pro Max</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11 Pro</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </li>
-
-              <li class="header__catalog-list">
-                <a href="#">Самокаты</a>
-
-                <div class="header__catalog-content">
-                  <ul class="header__catalog-content-top">
-                    <li>
-                      <a href="#">Новинки</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Акции</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Распродажа</a>
-                    </li>
-
-                    <li>
-                      <a href="#">Смартфоны 2020</a>
-                    </li>
-                  </ul>
-
-                  <div class="header__catalog-sublist">
-                    <a href="#" class="header__catalog-sublist-title">
-                      <img src="img/pic/ico/catalog-ico-1.jpg" width="34px" height="34px" alt="">
-                      <span>Apple</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">iPhone 11 Pro Max</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11 Pro</a>
-                      </li>
-                      <li>
-                        <a href="#">iPhone 11</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
+        <div class="header__catalog-bg"></div>
       </div>
 
       <div class="search uk-width-expand@l">

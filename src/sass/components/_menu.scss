@@ -2,7 +2,7 @@
 	&.uk-modal {
 		top: 60px;
 		padding: 0;
-		background: $white;
+		background: #FFFFFF;
 		box-shadow: inset 2px 2px 5px $black-opacity-1;
 		z-index: 300;
 		transition: opacity .05s linear;
@@ -10,9 +10,7 @@
 		&.uk-modal-container .uk-modal-dialog {
 			height: 100%;
 			border-radius: 0;
-			/* overflow-y: scroll; */
-			overflow-y: auto;
-			-webkit-overflow-scrolling: touch;
+			overflow-y: scroll;
 		}
 	}
 
@@ -89,6 +87,7 @@
 	&__list {
 		padding: 20px 5px;
 
+
 		a {
 			display: block;
 			padding: 10px 15px;
@@ -144,173 +143,108 @@
 	}
 
 	&__categories {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-
-		&-image {
-			width: 70px;
-			margin-right: 20px;
-
-			img {
-				display: block;
-				margin: auto;
-			}
-		}
-
-		&-sublist {
-			position: absolute;
-			z-index: 1;
-			width: 100%;
-			height: 0;
-			top: 0;
-			left: 0;
-			background-color: $gray-light-4;
-			transform: translatex(100%);
-			transition: transform .3s;
-			overflow: hidden;
-		}
-
-		&-list {
-			position: relative;
-
-			&:not(:last-of-type) {
+		li:not(:last-of-type) {
+			.uk-accordion-title {
 				border-bottom: 1px solid $gray-10-opacity-5;
 			}
+		}
 
-			&.active {
-				.menu__categories-sublist {
-					position: fixed;
-					top: 94px;
-					transform: translatex(0);
-					overflow-y: auto;
-					-webkit-overflow-scrolling: touch;
-					height: 89%;
-				}
-			}
+		.uk-accordion-title {
+			position: relative;
+			padding: 15px;
+			font: 500 19px/24px FuturaPT;
+			color: $second-black-color;
 
-			&::after {
+			&::before {
 				content: "";
+				display: block;
 				position: absolute;
-				right: 15px;
+				right: 25px;
 				top: 0;
 				bottom: 0;
 				margin: auto;
-				width: 10px;
-				height: 10px;
-				color: $main-color;
-				border-top: 2px solid;
-				border-left: 2px solid;
-				border-radius: 1px 0 0 0;
-				transform: rotate(135deg) translate(50%, 50%);
+				border-bottom: 2px solid $main-dark-color;
+				border-right: 2px solid $main-dark-color;
+				height: 8px;
+				width: 8px;
+				transform: rotate(45deg);
+				background: none;
+				transition: transform .3s;
 			}
 		}
 
-		&-item {
-			&-container {
+		li.uk-open .uk-accordion-title {
+			&::before {
+				transform: rotate(-135deg);
+			}
+		}
+
+		.uk-accordion-content {
+			margin: 0;
+			padding: 20px 0;
+			border-bottom: 1px solid $gray-10-opacity-5;
+			background-color: $gray-light-4;
+		}
+
+		&-list {
+			li {
 				display: flex;
-				align-items: center;
-				padding: 20px 30px;
-
-				&>span {
-					font: 500 18px/24px FuturaPT;
-					color: $main-black-color;
-				}
+				width: auto;
+				min-height: 190px;
+				max-height: 190px;
+				margin-right: 10px;
+				padding: 10px;
+				box-shadow: 0px 2px 6px $black-opacity-05;
+				border-radius: 8px;
+				background: #FFFFFF;
 			}
-		}
 
-		&-title {
-			position: relative;
-			padding: 14px 15px;
-			border-bottom: 1px solid $gray-light-4;
-			border-top: 1px solid $gray-light-4;
-
-			&>span {
-				display: block;
+			a {
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-around;
+				flex-direction: column;
+				align-items: center;
 				text-align: center;
-				font: 500 18px/24px FuturaPT;
+				font: 500 14px/16px FuturaPT;
 				color: $main-black-color;
 			}
 		}
 
-		&-back {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 30px;
-			margin: auto;
+		/* swiper */
+		.swiper-products {
+			.swiper-slide {
+				width: 190px;
+				height: 200px;
 
-			span {
-				font: 500 16px/22px FuturaPT;
-				color: $main-color;
-				border-bottom: 1px solid;
-			}
-
-			&::before {
-				content: "";
-				position: absolute;
-				left: -17px;
-				top: 0;
-				bottom: 0;
-				margin: auto;
-				width: 7px;
-				height: 7px;
-				color: $main-color;
-				border-top: 2px solid;
-				border-left: 2px solid;
-				border-radius: 1px 0 0 0;
-				transform: rotate(-45deg) translate(50%, 50%);
-			}
-		}
-
-		&-accordion {
-			.uk-accordion-title {
-				position: relative;
-				padding: 15px;
-				font: 500 16px/24px FuturaPT;
-				color: $second-black-color;
-				background-color: $white;
-				border-bottom: 1px solid $gray-light-4;
-
-				&::before {
-					display: none;
+				a {
+					padding: 10px;
+					text-align: center;
+					border-radius: 20px;
 				}
 
-				&::after {
-					content: "";
-					position: absolute;
-					right: 25px;
-					top: 0;
-					bottom: 0;
+				img {
 					margin: auto;
-					width: 10px;
-					height: 10px;
-					color: $main-color;
-					border-top: 2px solid;
-					border-left: 2px solid;
-					border-radius: 1px 0 0 0;
-					transform: rotate(-135deg) translate(50%, 50%);
+					width: 100%;
+					height: 100%;
+					mix-blend-mode: multiply;
 				}
-			}
 
-			li.uk-open {
-				.uk-accordion-title {
-					color: $main-color;
-				}
-			}
+				span {
+					font: 500 18px/28px FuturaPT;
+					color: $main-black-color;
+					transition: color .15s;
 
-			.uk-accordion-content {
-				margin: 0;
-				background-color: $gray-light-4;
-				border-bottom: 1px solid $gray-light-4;
-
-				li {
-					a {
-						display: block;
-						padding: 20px 15px;
-						font: normal 16px/20px FuturaPT;
-						color: $black;
+					&:first-of-type {
+						font: 400 12px/10px FuturaPT;
+						color: $gray-11;
 					}
+				}
+
+				div {
+					margin-bottom: 10px;
+					width: 125px;
+					height: 125px;
 				}
 			}
 		}

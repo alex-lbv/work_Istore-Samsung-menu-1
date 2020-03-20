@@ -94,24 +94,6 @@ $(document).ready(function () {
 		document.querySelector('.header__catalog-wrapper').style.top = (145 - pageYOffset) + 'px';
 	});
 
-	/* Кнопка каталог Desktop */
-	$('.header__catalog-btn').click(function () {
-		if (!$('.header__catalog-btn-text').data('status')) {
-			$('.header__catalog-btn-text').html('Закрыть');
-			$('.header__catalog-btn-text').data('status', true);
-		} else {
-			$('.header__catalog-btn-text').html('Каталог товаров');
-			$('.header__catalog-btn-text').data('status', false);
-		}
-
-		$(document).mouseup(function (e) {
-			if (!$('.header__catalog').is(e.target) && $('.header__catalog').has(e.target).length === 0) {
-				$('.header__catalog-btn-text').html('Каталог товаров');
-				$('.header__catalog-btn-text').data('status', false);
-			}
-		});
-	});
-
 	/* Кнопка Меню для мобильных устройств */
 	$(document).on('click', '.header__menu-button', function () {
 		if ($('#menuMobile').hasClass('uk-open')) {
