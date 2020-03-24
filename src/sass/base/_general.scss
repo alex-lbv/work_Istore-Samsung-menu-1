@@ -488,3 +488,13 @@ select {
   left: 0;
   padding: 35px 15px 0;
 }
+
+/* отступы для label смены цвета на транице продукта */
+#sort_color_options {
+  padding: 10px !important;
+}
+
+#sort_color_select .color {
+  margin-right: 10px !important;
+  border-radius: 50% !important;
+}
