@@ -579,7 +579,7 @@
           }
 
           @include screen(l) {
-            padding: 0 30px;
+            padding: 0 28px;
             min-height: 60px;
             white-space: nowrap;
             font: 500 18px/23px FuturaPT;
@@ -624,6 +624,19 @@
       pointer-events: none;
       background: $gray-light;
       transition: opacity .2s;
+
+      &::-webkit-scrollbar {
+        width: 9px;
+
+        &-thumb {
+          background: $main-black-color-opacity-4;
+          border-radius: 15px;
+
+          &:hover {
+            background: $main-black-color-opacity-6;
+          }
+        }
+      }
     }
 
     &-wrap {
@@ -698,7 +711,7 @@
   &__banner {
     position: relative;
     padding: 15px 25px 15px 105px;
-    width: 275px;
+    width: 260px;
     text-align: right;
     background-color: $gray-light-4;
     border-radius: 8px;
