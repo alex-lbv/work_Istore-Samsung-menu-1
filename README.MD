@@ -1,4 +1,4 @@
-# storesamsung
+# work_Istore-Samsung-menu-1
 ## Installation
 ```sh
 $ yarn
