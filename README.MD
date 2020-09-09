@@ -1,1 +1,14 @@
-<h1>Samsung<h1>
+# storesamsung
+## Installation
+```sh
+$ yarn
+```
+or
+```sh
+$ npm i
+```
+
+### dev mode
+```sh
+$ gulp dev
+```
